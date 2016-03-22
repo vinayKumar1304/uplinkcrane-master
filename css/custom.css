@@ -1,0 +1,97 @@
+.contact-us{
+	font:"Raleway";
+}
+.container-first{
+	display: block;
+    background: rgb(248,248,248);
+    background-repeat: repeat;
+    background-size: cover;
+    clear: both;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.heading-one{
+	font-size: 40px;
+    color: rgba(0,0,0,1);
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.2em;
+	margin-top:5px;
+}
+.heading-four{
+	color:#83838c;
+	line-height:1.5em;
+}
+.section-two .form-control{
+	background:rgba(225,225,225,.3);
+	border:none;
+	border-top:1px solid #dedede;
+	
+	
+}
+.section-two .form-control:hover{
+	border-top:1px solid #ffd200;
+	
+}
+.section-two .form-control:focus{
+	border-color:#ffd200;
+	box-shadow:none;
+}
+.section-two br{
+	margin-top: 0.5em;
+    content: ' ';
+    display: block;
+}
+.submit-btn{
+	background:rgba(255,210,0,1);
+	border-color:rgba(255,210,0,1);
+	color:#000;
+	padding:12px 20px;
+	line-height:1.5em;
+	letter-spacing:2px;
+	border-radius:3px;
+}
+.submit-btn:hover{
+	background:#000;
+	border-color:#000;
+	color:#FFF;
+}
+.section-two{
+	margin-bottom:35px;
+	padding-top:35px;
+}
+.section-two h4{
+	font-weight: 700;
+    line-height: 1.5em;
+}
+.section-two p{
+	padding-top:.50em;
+	padding-bottom:.50em;
+}
+.email-contact a{
+	color:#ffd200;
+}
+.email-contact a:hover{
+	color:#ffd200;
+	text-decoration:none;
+}
+/**media query start*/
+@media only screen and (max-width: 470px){
+	.container-first{
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.heading-one{
+		font-size:26px;
+		
+	}
+	
+	.container{
+		padding-left:0px;
+		padding-right:0px;
+	}
+	.section-two{
+		padding-right:10px;
+		padding-left:10px;
+	}
+}
