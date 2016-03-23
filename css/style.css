@@ -720,7 +720,7 @@ p{color: #83838c;}
 }
 .whatWeChoose .header-line{ width: 100%; float: left; margin-top: 5px;}
 .whatWeChoose .header-line > span{height: 1px; margin-top:0px;}
-.about-slider #smallCarousel {padding:50px 50px 114px;}
+.about-slider #smallCarousel {padding:50px 50px 98px;}
 #smallCarousel { text-align: center;}
 #smallCarousel .author-img img{width: 50px; height: 50px; margin-right: 10px;}
 #smallCarousel .author-box {min-width: 38%; margin: 30px auto; max-width:38%;}
@@ -1662,7 +1662,7 @@ div.bhoechie-tab-menu .list-group-item:hover, div.bhoechie-tab-menu .list-group-
 .warrenty-sec p{font-family: "Open Sans"; font-size:14px; line-height: 21px;}
 .warrenty-sec .left p{padding-top: 20px;}
 .warrenty-sec .description-box .desc-title{font-size: 14px; font-family: "Raleway-ExtraBold"; line-height: 21px;}
-.we-do .product-box h4{font-family:"Raleway-SemiBold"; font-size:16px; line-height: 24px; padding-left: 15px; padding-right: 15px;}
+.we-do .product-box h4{font-family:"Raleway-SemiBold"; font-size:16px; line-height: 24px;}
 .we-do .product-box {margin-top: 6px;}
 .sec-tittle{margin-bottom: 5px;}
 .about-sec .header-line {text-align: center; margin-left: auto; margin-right: auto;}
