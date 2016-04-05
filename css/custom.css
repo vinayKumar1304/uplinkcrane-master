@@ -75,6 +75,195 @@
 	color:#ffd200;
 	text-decoration:none;
 }
+/**css for services page*/
+.services-heading  h1{
+	font-size:50px;
+	color:#ffd200;
+	line-height:54px;
+	font-weight:400;
+	font-style:normal;
+}
+.services-heading  h5{
+	font-weight:600;
+	font-size:16px;
+	line-height:1.5em;
+	margin-bottom:35px;
+}
+.services-heading{
+	padding-right:10%;
+	padding-left:10%;
+	padding-top:60px;
+}
+.all-services{
+	font-size:26px;
+	font-weight:700;
+	line-height:1.7em;
+	color:#000;
+}
+.main-container{
+	background:#F0F0F0;
+}
+.yellow-bg{
+	background:#FFD200;
+}
+.all-services-container{
+	margin-top:40px;
+	margin-bottom:20px;
+}
+.yellow-line{
+	width:40px;
+	border:1px solid #ffd200;
+	
+}
+.services-details{
+	padding-bottom:40px;
+}
+.services-details h5{
+	font-weight:600;
+	font-size:16px;
+	line-height:1.5em;
+	color:#000000;
+}
+.services-details>h6{
+	font-weight:800;
+	font-size:14px;
+	line-height:1.5em;
+}
+.services-details h6 a{
+	color:#ffd200;
+}
+.policy-doc{
+	padding-top:40px;
+	padding-bottom:40px;
+}
+.text-download{
+	background:#3C3C4A;
+	padding:30px;
+}
+.text-download h5{
+	margin-top:0px;
+	color:#ffd200;
+	font-size:16px;
+}
+.btn-download{
+	background:#ffd200;
+}
+.policy-doc a{
+	text-decoration:none;
+}
+.building-project{
+	float:left;
+	width:100%;
+	padding-top:10px;
+	padding-bottom:15px;
+}
+.building-project h3{
+	float:left;
+	width:auto;
+	color:#fff;
+}
+.building-project .btn-getQuote{
+	float:right;
+	width:auto;
+	background:transparent;
+	border:2px solid #fff;
+	color:#fff;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+.work-chart{
+	/*-webkit-perspective:800px;
+	-moz-perspective:800px;
+	-o-perspective:800px;
+	perspective:800px;*/
+	height:115px;
+	position:relative;
+	
+
+}
+.work-chart > .work-images img{
+	/**-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	transition:all 2s ease;*/
+	-webkit-transform: perspective(600px) rotateY(0deg);
+	-moz-transform: perspective(600px) rotateY(0deg);
+	-o-transform: perspective(600px) rotateY(0deg);
+	transform: perspective(600px) rotateY(0deg);
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+	transition:-webkit-transform .5s linear 0s;
+	transition:-moz-transform .5s linear 0s;
+	transition:-o-transform .5s linear 0s;
+	transition:transform .5s linear 0s;
+	position:absolute;
+	display:inline;
+	
+	
+	
+}
+.work-chart > .back-side{
+	/**-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	transition:all 2s ease;*/
+	width:180px;
+	height:113px;
+	background:#3c3c4a;
+	transition:-moz-transform .5s linear 0s;
+	transition:transform .5s linear 0s;
+	transition:-webkit-transform .5s linear 0s;
+	
+	
+	position:absolute;
+	-webkit-transform: perspective(600px) rotateY(180deg);
+	-moz-transform: perspective(600px) rotateY(180deg);
+	transform: perspective(600px) rotateY(180deg);
+	backface-visibility:hidden;
+	-webkit-backface-visibility:hidden;	
+	-moz-backface-visibility:hidden;	
+		
+}
+.work-chart:hover > .work-images img{
+/*-webkit-transform:rotateY(180deg);
+-moz-transform:rotateY(180deg);
+-o-transform:rotateY(180deg);
+transform:rotateY(180deg);*/
+transform: perspective(600px) rotateY(-180deg);
+-webkit-transform: perspective(600px) rotateY(-180deg);
+-moz-transform: perspective(600px) rotateY(-180deg);
+
+}
+.work-chart:hover > .back-side{
+/*-webkit-transform:rotateY(-180deg);
+-moz-transform:rotateY(-180deg);
+-o-transform:rotateY(-180deg);
+transform:rotateY(-180deg);*/
+transform: perspective(600px) rotateY(0deg);
+-webkit-transform: perspective(600px) rotateY(0deg);
+-moz-transform: perspective(600px) rotateY(0deg);
+
+}
+.back-side span{
+	color:#fff;
+	padding:45px 10px 5px;
+	border-bottom:1px solid #fff;
+	display:inline-block;
+}
+.pdf:before{
+	content: "\e36e";
+	font-size: 128px;
+    line-height: 128px;
+    /* width: 128px; */
+    /* height: 128px; */
+    position: absolute;
+    top: 50%;
+    margin-top: -64px;
+    left: 50%;
+    margin-left: -64px;
+}
+
+/**css end for services page*/
 /**media query start*/
 @media only screen and (max-width: 470px){
 	.container-first{
