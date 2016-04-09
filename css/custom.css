@@ -17,10 +17,12 @@
     font-style: normal;
     line-height: 1.2em;
 	margin-top:5px;
+        font-family: "Raleway-Light";
 }
 .heading-four{
 	color:#83838c;
 	line-height:1.5em;
+         font-family: "Raleway-Light";
 }
 .section-two .form-control{
 	background:rgba(225,225,225,.3);
@@ -61,10 +63,14 @@
 	padding-top:35px;
 }
 .section-two h4{
-	font-weight: 700;
-    line-height: 1.5em;
+    font-family: "Raleway-Bold";
+    line-height: 21px;
 }
-.section-two p{
+.section-two p, .email-contact a{
+        line-height:21px;
+        font-family: "Open Sans";
+}
+.section-two p, .email-contact a{
 	padding-top:.50em;
 	padding-bottom:.50em;
 }
@@ -261,7 +267,8 @@ transform: perspective(600px) rotateY(0deg);
     margin-top: -64px;
     left: 50%;
     margin-left: -64px;
-}
+}   
+.contact-form input, .contact-form textarea {font-family: "Open Sans"; letter-spacing: 2px;}
 
 /**css end for services page*/
 /**media query start*/
