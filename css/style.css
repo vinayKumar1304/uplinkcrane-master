@@ -1113,11 +1113,6 @@ p {
     margin-top: 45px
 }
 
-.whatWeChoose .product-box {
-    overflow: hidden;
-    min-height: 150px;
-    max-height: 200px
-}
 
 .whatWeChoose .product-box a {
     color: #ffd200
@@ -2452,7 +2447,7 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
     font-family: "Flaticon4";
     font-style: normal
 }
-
+.office-section a, .office-section a:hover, .office-section a:focus{color:#ffd200;}
 @media screen and (min-width: 280px) and (max-width: 767px) {
     .footer-disclaimer {
         text-align: center
@@ -2608,11 +2603,18 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
     .footer-section {
         background: rgba(43, 43, 53, 1) url("../images/footer_bg.png") no-repeat;
         background-size: cover;
-        background-position: none
+        background-position: none;
     }
+    .whatWeChoose .product-box > div {padding: 0!important;}
+    .whatWeChoose .product-box {
+       min-height: auto;
+        max-height: auto;
+    }
+    .we-do .product-box:first-child, .we-do .product-box:last-child{padding-left:5px!important; padding-right:5px!important;}
 }
 
-@media screen and (min-width: 767px) {
+
+@media screen and (min-width: 767px){
     #header {
         position: fixed;
         z-index: 999
@@ -2633,6 +2635,11 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
     }
     #page-title-wrapper .page-title {
         margin-top: 0px
+    }
+  .whatWeChoose .product-box {
+        overflow: hidden;
+        min-height: 150px;
+        max-height: 200px
     }
 }
 
@@ -2733,3 +2740,5 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
     background: #ffc000;
     border-color: #ffc000
 }
+.office-section .sec-tittle {font-family: "Raleway-SemiBold"; font-size:16px; line-height: 24px;}
+.office-section p {font-family: "Open sans"; font-size:14px; line-height: 21px;}
