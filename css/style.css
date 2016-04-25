@@ -13,7 +13,7 @@
 }
 
 .m-B {
-   margin-bottom: 0px !important
+    margin-bottom: 0px !important
 }
 
 .m-L {
@@ -163,6 +163,10 @@ button {
     font-family: 'Raleway-Bold';
     src: url('../fonts/Raleway-Bold.ttf') format('truetype')
 }
+@font-face {
+    font-family: 'Old Standard TT Regular';
+    src: url('../fonts/Old-standard-tt-R.woff2') format('truetype')
+}
 
 @font-face {
     font-family: 'Raleway-ExtraBold';
@@ -187,6 +191,14 @@ button {
 @font-face {
     font-family: 'Open Sans';
     src: url('../fonts/OpenSans-Regular.ttf') format('truetype')
+}
+/*@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('../fonts/openStandardTT-Regular.woff2') format('truetype')
+}*/
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('../fonts/Open-Sans-Regular.woff2') format('truetype')
 }
 
 @font-face {
@@ -225,7 +237,7 @@ button {
 }
 
 @font-face {
-    font-family: 'Raleway-SemiBold';
+    font-family: 'Raleway-Semi-Bold';
     src: url('../fonts/Raleway-SemiBold.ttf') format('truetype')
 }
 
@@ -1124,7 +1136,7 @@ p {
     line-height: 24px;
     font-size: 16px;
     text-decoration: none;
-    font-family: "Raleway-SemiBold"
+    font-family: "Raleway-Semi-Bold"
 }
 
 .whatWeChoose .product-box a span.glyphicon {
@@ -2607,7 +2619,7 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
     }
     .whatWeChoose .product-box > div {padding: 0!important;}
     .whatWeChoose .product-box {
-       min-height: auto;
+        min-height: auto;
         max-height: auto;
     }
     .we-do .product-box:first-child, .we-do .product-box:last-child{padding-left:5px!important; padding-right:5px!important;}
@@ -2636,7 +2648,7 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
     #page-title-wrapper .page-title {
         margin-top: 0px
     }
-  .whatWeChoose .product-box {
+    .whatWeChoose .product-box {
         overflow: hidden;
         min-height: 150px;
         max-height: 200px
@@ -2671,7 +2683,7 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
 }
 
 .we-do .product-box h4 {
-    font-family: "Raleway-SemiBold";
+    font-family: "Raleway-Semi-Bold";
     font-size: 16px;
     line-height: 24px
 }
@@ -2740,5 +2752,84 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
     background: #ffc000;
     border-color: #ffc000
 }
-.office-section .sec-tittle {font-family: "Raleway-SemiBold"; font-size:16px; line-height: 24px;}
-.office-section p {font-family: "Open sans"; font-size:14px; line-height: 21px;}
+.office-section .sec-tittle {font-family: "Raleway-Semi-Bold"; font-size:16px; line-height: 24px;}
+.office-section p {font-family: "Open Sans Regular"; font-size:14px; line-height: 21px;}
+
+.our-project {
+    background: url("../images/project/portfolio-img-1.jpg")!important;
+    background-position: center top;
+    background-repeat: repeat;
+    background-size: contain;
+    height: 200px;
+}
+.our-project .heading-one {margin-top:20px; color: rgba(255, 255, 255, 1);}
+.our-project .heading-four {color: rgba(255, 210, 0, 1);}
+.hover-text{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    opacity: 0;
+    padding: 25px 30px 30px;
+    position: absolute;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+}
+.hover-text .caption .heading a {color: #fff; text-decoration:none;}
+.hover-text .caption .border {
+    background-color: #fff;
+    height: 1px;
+    margin: 15px 0;
+}
+.hover-text .caption .border span, .hover-text .caption .plus-icon {
+     background-color: #ffd200 !important;
+    color: #000000 !important;
+}
+.hover-text .caption .border span{
+   
+    display: block;
+    height: 1px;
+    width: 20px;
+}
+.hover-text .caption p{
+
+    background-color: #ffd200 !important;
+    color: #000000 !important;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+.hover-text .caption p{
+    margin: 0;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+.oic-plus-1::before {
+    content: "";
+}
+[class^="oic-"]::before, [class*=" oic-"]::before {
+    font-family: "ozythemes";
+    font-style: normal !important;
+    font-variant: normal !important;
+    font-weight: normal !important;
+    line-height: 1;
+    text-transform: none !important;
+}
+.hover-text .caption .plus-icon{
+    /*background-color: #dedede;*/
+    bottom: 0;
+    height: 28px;
+    line-height: 28px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    width: 28px;
+    font-size: 16px;
+    line-height: 34px;
+}
+.featured-box:hover .hover-text{opacity:1;}
+.planning-sec {padding-top:35px;}
+.planning-sec .work-chart {height:170px;}
+.planning-sec .back-side span{padding-top:25%;}
+#accordion .panel-heading {background: transparent;}
