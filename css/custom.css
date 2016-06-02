@@ -198,8 +198,10 @@
     line-height: 20px;
 }
 .work-chart{
-    height:122px;
+    height:113px;
     position:relative;
+    overflow: hidden;
+    margin-bottom: 10px;
 }
 .work-chart > .work-images{
     -webkit-transform:rotateY(0deg);
