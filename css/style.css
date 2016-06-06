@@ -538,7 +538,7 @@ p {
     height: 1px;
     background-color: #dfdfdf;
     margin-bottom: 15px;
-    margin-top: 5px;
+    margin-top: 0;
     float: left;
     width: 100%
 }
@@ -555,6 +555,7 @@ p {
 .heading {
     font-family: "Raleway-Bold";
     line-height: 1.5em
+    margin-bottom:2px;
 }
 
 .read-more {
@@ -681,7 +682,7 @@ p {
     padding-top: 30px
 }
 .history-bg {
-    background: rgba(43, 43, 53, 1) url("../images/header_dark_bg.png") no-repeat scroll center top;
+    background: rgba(43, 43, 53, 1) url("../images/header_dark_bg.jpg") no-repeat scroll center top;
     /*padding-top: 30px*/
 }
 
@@ -709,7 +710,7 @@ p {
 }
 
 .footer-top .heading {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #fff;
     font-size: 18px;
     font-style: normal;
@@ -1181,7 +1182,7 @@ p {
 .whatWeChoose .header-line {
     width: 100%;
     float: left;
-    margin-top: 5px
+    margin-top: 0;
 }
 
 .whatWeChoose .header-line > span {
@@ -1635,6 +1636,12 @@ div.wpcf7 .screen-reader-response {
 .vision-sec {
     padding: 100px 0;
 }
+.vision-sec .heading{
+     font-size: 26px;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin: 0;
+}
 
 .ozy-spacer {height:30px;}
 .ozy-content-divider {
@@ -1686,7 +1693,7 @@ div.wpcf7 .screen-reader-response {
 }
 
 .company-value-sec .tab-content {
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .board-tabs li {
@@ -1716,7 +1723,8 @@ div.wpcf7 .screen-reader-response {
     color: #83838c;
     border-radius: 0px;
     margin: 0px;
-    border: 0 none !important
+    border: 0 none !important;
+        padding:0.5em 1em;
 }
 
 #smallCarousel.about .carousel-control.left,
@@ -1802,7 +1810,7 @@ div.bhoechie-tab-container {
     background-color: #ffffff;
     border-radius: 4px;
     -moz-border-radius: 4px;
-    margin: 20px 0;
+    /*padding-top: 35px;*/
     background-clip: padding-box;
     opacity: 0.97;
     filter: alpha(opacity=97)
@@ -1835,7 +1843,7 @@ div.bhoechie-tab-menu div.list-group>a.active .fa {
     color: #ffffff
 }
 
-div.bhoechie-tab-menu div.list-group>a.active:after {
+/*div.bhoechie-tab-menu div.list-group>a.active:after {
     content: '';
     position: absolute;
     left: 100%;
@@ -1845,18 +1853,19 @@ div.bhoechie-tab-menu div.list-group>a.active:after {
     border-bottom: 13px solid transparent;
     border-top: 13px solid transparent;
     border-left: 10px solid #ffd200
-}
+}*/
 
 div.bhoechie-tab-content {
     background-color: #ffffff;
     padding-left: 20px;
-    padding-top: 10px
+    /*padding-top: 10px*/
 }
-
+div.bhoechie-tab-content .tab-heading {line-height: 27px; font-family: "Raleway-Bold"; margin: 6px 0;}
 div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
     display: none
 }
-
+.history-sec .bhoechie-tab .tab-heading{line-height: 39px; font-size: 26px;}
+.history-sec .bhoechie-tab p{padding-top: 0.5em; padding-bottom: 0.5em;}
 div.bhoechie-tab-menu .list-group-item:hover,
 div.bhoechie-tab-menu .list-group-item:focus,
 div.bhoechie-tab-menu .list-group-item.active,
@@ -1866,6 +1875,7 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
     color: #ffd200 !important
 }
 
+.bhoechie-tab-menu .sec-tittle:first-child{margin-top:0; padding-top: 0;}
 .btn-breadcrumb .btn:not(:last-child):after {
     content: " ";
     display: block;
@@ -1998,7 +2008,9 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
 }
 
 .glance-box h5 {
-    font-size: 16px
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Raleway-Semi-Bold";
 }
 
 .glance-box a {
@@ -2427,7 +2439,7 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
 
 #company-achievement span.icon {
     border-radius: 50%;
-    padding: 25px;
+    padding: 55px 0 0;
     background: #ffd200;
     color: #3c3c4a;
     font-family: "Flaticon2";
@@ -2435,8 +2447,8 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
     font-size: 64px;
     display: inline-block;
     margin-bottom: 0.5em;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
 }
 
 [class^="oic-flaticon3-"]::before,
@@ -3492,6 +3504,7 @@ input:not([type=submit]):not([type=file]), select, textarea {
     .footer-disclaimer {
         text-align: center
     }
+     
     #top-menu ul > li.search-icon > a .visible-xs {
         display: inline-block !important
     }
@@ -3619,13 +3632,13 @@ input:not([type=submit]):not([type=file]), select, textarea {
         padding: 6px 20px;
         margin-left: 10px
     }
-    div.bhoechie-tab-menu div.list-group > a.active::after {
+/*    div.bhoechie-tab-menu div.list-group > a.active::after {
         border-bottom: 0 none;
         border-left: 0 none
-    }
-    .btn-breadcrumb .btn:not(:last-child)::after {
+    }*/
+/*    .btn-breadcrumb .btn:not(:last-child)::after {
         left: 98%
-    }
+    }*/
     #page-title-wrapper .page-title {
         margin-top: 20px
     }
@@ -3661,6 +3674,7 @@ input:not([type=submit]):not([type=file]), select, textarea {
         position: fixed;
         z-index: 999
     }
+    .bhoechie-tab-menu  {padding-left:0!important;}
     .mLgT {
         margin-top: 180px !important
     }
@@ -3704,3 +3718,8 @@ input:not([type=submit]):not([type=file]), select, textarea {
 .board-sec .tab-content h4 {margin:0;}
 .board-sec .header-line {margin-top:0;}
 .board-sec .header-line > span{width:40px;}
+.tab-section {padding:35px 0!important;}
+div.bhoechie-tab-container .list-group-item.active{color:rgba(255, 210, 0, 1);}
+div.bhoechie-tab-container .list-group-item {border-radius: 0;}
+div.bhoechie-tab-container .list-group-item, .bhoechie-tab-content .tab-desc {line-height: 21px; font-family: "Open Sans Regular";}
+.company-value-sec .header-line{margin-bottom: 30px;}
