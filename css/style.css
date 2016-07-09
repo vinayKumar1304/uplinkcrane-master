@@ -115,36 +115,36 @@
 .pdB-60{padding-bottom: 60px!important;}
 .pdB-90{padding-bottom: 90px!important;}
 .bdrB {
-    border-bottom: 2px solid #e5e5e5
+    border-bottom: 2px solid #e5e5e5;
 }
 
 .bdrSB {
-    border-bottom: 1px solid #e5e5e5
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .bdrT {
-    border-top: 1px solid #ddd
+    border-top: 1px solid #ddd;
 }
 
 .bdr {
-    border: 1px solid #e5e5e5 !important
+    border: 1px solid #e5e5e5 !important;
 }
 
 .bdr-T {
-    border-top: 0 none !important
+    border-top: 0 none !important;
 }
 
 .bdr-B {
-    border-bottom: 0 none !important
+    border-bottom: 0 none !important;
 }
 
 .bdr-N {
-    border: 0 none !important
+    border: 0 none !important;
 }
 
 .bdrTB {
     border-top: 1px solid #e5e5e5 !important;
-    border-bottom: 1px solid #e5e5e5 !important
+    border-bottom: 1px solid #e5e5e5 !important;
 }
 
 a,
@@ -1781,7 +1781,7 @@ div.bhoechie-tab-container {
 }
 
 div.bhoechie-tab-menu {
-    padding-right: 0;
+    padding-right: 68px;
     padding-left: 0;
     padding-bottom: 0
 }
@@ -1820,10 +1820,10 @@ div.bhoechie-tab-menu div.list-group>a.active .fa {
 
 div.bhoechie-tab-content {
     background-color: #ffffff;
-    padding-left: 20px;
+    /*padding-left: 20px;*/
     /*padding-top: 10px*/
 }
-div.bhoechie-tab-content .tab-heading {line-height: 27px; font-family: "Raleway-Bold"; margin: 6px 0;}
+div.bhoechie-tab-content .tab-heading {line-height: 27px; font-family: "Raleway-Bold"; margin: 6px 0; color:#000;}
 div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
     display: none
 }
@@ -1959,6 +1959,7 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
     white-space: pre;
     color: #222
 }
+.vertical-sep p{display: block}
 
 .glance-box .icon-box {
     font-size: 48px;
@@ -1974,6 +1975,7 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
     font-size: 16px;
     line-height: 24px;
     font-family: "Raleway-Semi-Bold";
+    color:#000;
 }
 
 .glance-box a {
@@ -2010,7 +2012,7 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
 }
 
 .ozy-timeline-wrapper {
-    padding-top: 40px;
+    /*padding-top: 40px;*/
     position: relative
 }
 
@@ -2152,11 +2154,6 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
     margin-bottom: 0
 }
 
-.ozy-timeline-wrapper {
-    padding-top: 40px;
-    position: relative
-}
-
 .timeline > li::after {
     clear: both
 }
@@ -2178,10 +2175,6 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
     float: right
 }
 
-.ozy-timeline-wrapper {
-    padding-top: 40px;
-    position: relative
-}
 
 .ozy-timeline-wrapper > .timeline-caption {
     font-weight: 300 !important;
@@ -2641,8 +2634,10 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
 .planning-sec {padding-top:35px;}
 .planning-sec .work-chart {height:170px;}
 .planning-sec .back-side span{padding-top:25%;}
+.planning-sec .col-xs-9 h4 {margin: 6px 0;}
+.planning-sec .col-xs-9 p{padding: 0.5em 0; line-height: 21px; font-family: "Open Sans Regular";}
 #accordion .panel-heading {background: transparent;}
-#project-filter {float: none; margin: 30px auto 30px auto; width: 85%; display: table; padding: 0 30px;}
+#project-filter {float: none; margin: 30px auto 30px auto; width: 100%; display: table; padding: 0 30px;}
 #project-filter li {float: none; display: table-cell!important; margin: 0 auto; vertical-align: middle;}
 #project-filter > li {
     background-color: #30303c!important;
@@ -2676,7 +2671,7 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
     background-color: transparent!important;
     padding: 0!important;
 }
-.widget ul:first-child>li:first-child, #sidebar .widget li:first-child {
+.widget ul:first-child>li:first-child, #sidebar .widget > ul > li:first-child {
     padding-top: 0 !important;
 }
 .widget li>a {
@@ -2696,11 +2691,17 @@ div.bhoechie-tab-menu .list-group-item.active:hover {
     border-bottom: 1px solid #dedede;
     padding: 0;
 }
-.widget li>a:hover{color:#ffd200!important; background: transparent;}
+#sidebar .widget li.dropdown.slide-up {border-bottom:0 none;}
+#sidebar .widget li.dropdown ul li {margin-left: 20px; border-bottom-style: dotted;}
+#sidebar .widget li.dropdown ul li a {padding: 10px 15px 10px 0;}
+#sidebar .widget li.dropdown ul li ul li {padding-left:0; margin-left:10px;}
+#sidebar .widget li.dropdown ul li ul li a{padding:10px 15px 10px 0;}
+.widget li a:hover, .widget li a:focus{color:#ffd200!important; background: transparent;}
 .widget li.active>a , .widget li.active>a:hover{color:#ffd200!important; background: transparent;}
-#accordion .panel-title a{display:block;}
-#accordion .panel-title.open > a > span.glyphicon-minus, #accordion .panel-title > a > span.glyphicon-plus{display:block;}
-#accordion .panel-title.open > a > span.glyphicon-plus, #accordion .panel-title > a > span.glyphicon-minus{display:none;}
+#accordion .panel-title a{display:block; font-family: "Raleway-Bold"; color: #83838c;}
+#accordion .panel-title.open > a > span.glyphicon-minus, #accordion .panel-title > a > span.glyphicon-plus, #accordion li.slide-up > a > span.glyphicon-chevron-down, #accordion li > a > span.glyphicon-chevron-right{display:block;}
+#accordion .panel-title.open > a > span.glyphicon-plus, #accordion .panel-title > a > span.glyphicon-minus, #accordion li.slide-up > a > span.glyphicon-chevron-right, #accordion li > a > span.glyphicon-chevron-down{display:none;}
+#accordion .panel-body {font-family: "Open Sans Regular"; line-height: 21px; color: #83838c;}
 .planning .container-first{background: rgb(240,240,240);}
 .hover-text .caption .heading{margin-top: 0;}
 .ozy-tabs-menu {
@@ -3181,6 +3182,7 @@ h2.post-title{
 #sidebar .widget {
     margin-bottom: 30px !important;
 }
+#sidebar .heading {text-transform: uppercase; margin-bottom:20px; padding-bottom: 20px; border-bottom: 1px solid #dedede;}
 .wp-search-form {
     position: relative;
 }
@@ -3232,15 +3234,17 @@ input:not([type=submit]):not([type=file]), select, textarea {
 }
 #sidebar .widget li {
     border-bottom: 1px solid #dedede;
-    padding: 8px 0 8px 0;
+    padding: 8px 0;
 }
 
 .widget li>a {
     color: #83838c !important;
-    text-transform: uppercase;
+    text-transform: capitalize;
     display: table;
     width: 100%;
     text-decoration: none;
+    font-family: "Open Sans Regular";
+    padding: 0;
 }
 .widget li>a:hover {
     color: #ffd200 !important;
@@ -3426,8 +3430,9 @@ input:not([type=submit]):not([type=file]), select, textarea {
 
 .company-value-sec .header-line, .board-sec .header-line{height: 0!important;}
 .company-value-sec .header-line > span, .board-sec .header-line > span{height: 2px!important; width: 50px;}
-.company-value-sec .container > div {padding:60px 0;}
+.company-value-sec .container > div {padding:45px 0;}
 .company-value-sec .sec-tittle, .board-sec .sec-tittle {font-size: 26px; line-height: 39px; margin-top:0; margin-bottom:0;}
+.company-value-sec .bdrT {border-color:#ebebeb;}
 .oic-flaticon5-WorldGlobe::before {
     content: "";
 }
@@ -3663,5 +3668,31 @@ input:not([type=submit]):not([type=file]), select, textarea {
 .tab-section {padding:35px 0!important;}
 div.bhoechie-tab-container .list-group-item.active{color:rgba(255, 210, 0, 1);}
 div.bhoechie-tab-container .list-group-item {border-radius: 0;}
-div.bhoechie-tab-container .list-group-item, .bhoechie-tab-content .tab-desc {line-height: 21px; font-family: "Open Sans Regular";}
+div.bhoechie-tab-container .list-group-item, .bhoechie-tab-content .tab-desc {line-height: 21px; font-family: "Open Sans Regular"; color:#83838c;}
 .company-value-sec .header-line{margin-bottom: 30px;}
+.vc_sep_holder {
+    display: table-cell;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+}
+.vc_sep_line {
+    border-color: #ebebeb;
+}
+.vc_sep_holder .vc_sep_line {
+    border-top: 1px solid #ebebeb;
+    display: block;
+    height: 1px;
+    position: relative;
+    top: 1px;
+    width: 100%;
+}
+.table-box {display: table;}
+.table-box h4, .table-box span{display: table-cell; white-space: pre;}
+.planning-sec .table-box {margin: 30px 0 15px;} 
+.modal-body .heading-font h4{font-family: "Raleway-Bold"; font-size: 24px; line-height: 29px; color: #000;}
+.modal-body .heading-font p{font-family: "Raleway-Regular"; font-size: 16px; line-height: 20px;}
+#company .carousel-control{width:10%; display:none;}
+#company .carousel-control{transition: display 0.3s ease-in-out 0.5s; color:#fff; opacity:1;}
+.history-sec.tab-section{padding-bottom: 0 !important;}

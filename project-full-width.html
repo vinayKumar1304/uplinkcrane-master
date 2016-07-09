@@ -15,7 +15,7 @@
     <body>
         <a title="Return to Top" id="go-to-top" href="#top" style="display: none;"><span class="icon glyphicon glyphicon-menu-up"></span></a>
        <header class="header col-xs-12 pd-N" id="header">
-            <div id="request-a-rate" class="modal fade" style="top: 0px;" tabindex="-1" role="dialog">
+<!--            <div id="request-a-rate" class="modal fade" style="top: 0px;" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content col-xs-12 pd-N">
                         <div class="modal-header bdr-B">
@@ -39,13 +39,13 @@
                                 <p class="col-sm-6 col-xs-12"><input type="text" placeholder="City (required)" aria-invalid="false" aria-required="true" class="form-control" size="40" value="" name="your-city"></p>
                                 <p class="col-sm-6 col-xs-12"><input type="text" placeholder="Subject" aria-invalid="false" class="form-control" size="40" value="" name="your-subject"></p>
                                 <p class="col-sm-6 col-xs-12"><textarea placeholder="Your Message" aria-invalid="false" class="form-control" rows="3" cols="40" name="your-message"></textarea></p>
-                                <!--<p class="col-sm-6 col-xs-12"><input type="submit" class="btn yellow-btn mT" value="Submit Form"><img class="ajax-loader" src="" alt="Sending ..." style="visibility: hidden;"></p>-->
+                                <p class="col-sm-6 col-xs-12"><input type="submit" class="btn yellow-btn mT" value="Submit Form"><img class="ajax-loader" src="" alt="Sending ..." style="visibility: hidden;"></p>
                                 <div class=""></div>
                             </form>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
             <div class="col-xs-12 pd-N top-bar" id="info-bar">
                 <div class="container">
                     <div class="col-xs-12 pd-N">
@@ -203,193 +203,569 @@
                 </div>
             </div>
         </section>
+    
         <section class="container-fluid">
-            <ul id="project-filter" class="nav">
-                <li class="active" ><a data-filter=".category-all" href="#all">ALL PROJECTS</a></li>
-                <li class="s"></li><li ><a data-filter=".category-commercial" href="#commercial">COMMERCIAL</a></li>
-                <li class="s"></li><li><a data-filter=".category-education" href="#education" class="">CONSTRUCTION</a></li>
-                <li class="s"></li><li><a data-filter=".category-government" href="#government">GOVERNMENT</a></li>
-                <li class="s"></li><li><a data-filter=".category-green-building" href="#green-building">BRIDGE &AMP; HIGHWAY</a></li>
-                <li class="s"></li><li ><a data-filter=".category-infrastructure" href="#infrastructure">POWER PLANTS</a></li>
-                <li class="s"></li><li ><a data-filter=".category-interiors" href="#interiors">OIL &AMP; GAS</a></li>
-                <li class="s"></li><li ><a data-filter=".category-residential-hotel" href="#residential-hotel">SHOW &AMP; EVENTS</a></li>
-            </ul>
-        </section>
-        <section class="container-fluid">
-            <div class="row">
                 <div class="col-xs-12">
-                    <div class="container">
-                        <div class="col-xs-12 pd-N project-wrapper">
-                            <div class="col-xs-12 col-sm-3 pdLR">
-                                <div class="col-xs-12 pd-N featured-box">
-                                    <div class="col-xs-12 pd-N">
-                                        <a href="#"><img class="img-responsive" alt="image" src="images/services/shutterstock_102073156.jpg"/></a>
-                                    </div>
+                    <div class="container ">
+                        <ul id="project-filter" class="nav" role="tablist">
+                            <li role="presentation" class="active all-project"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">ALL PROJECTS</a></li>
+                            <li class="s"></li><li role="presentation" ><a href="#commercial"  aria-controls="commercial" role="tab" data-toggle="tab">COMMERCIAL</a></li>
+                            <li class="s"></li><li role="presentation" ><a href="#construction"  aria-controls="education" role="tab" data-toggle="tab">CONSTRUCTION</a></li>
+                            <li class="s"></li><li role="presentation" ><a href="#government" aria-controls="government" role="tab" data-toggle="tab">GOVERNMENT</a></li>
+                            <li class="s"></li><li role="presentation" ><a href="#green-building" aria-controls="green-building" role="tab" data-toggle="tab">BRIDGE &AMP; HIGHWAY</a></li>
+                            <li class="s"></li><li role="presentation" ><a href="#infrastructure" aria-controls="infrastructure" role="tab" data-toggle="tab">POWER PLANTS</a></li>
+                            <li class="s"></li><li role="presentation" ><a href="#interiors"  aria-controls="interiors" role="tab" data-toggle="tab">OIL &AMP; GAS</a></li>
+                            <li class="s"></li><li role="presentation" ><a href="#residential-hotel" aria-controls="residential-hotel" role="tab" data-toggle="tab">SHOW &AMP; EVENTS</a></li>
+                        </ul>
+                        <div class="col-xs-12 pd-N">
+                            <div class="tab-content">
+                                <div role="tabpanel" class=" project-wrapper tab-pane active" id="all">
+                                    <div class="row masonry-container">
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/project/project-img/commer-1.jpg"/></a>
+                                                </div>
 
-                                    <div class="hover-text">
-                                        <div class="caption">
-                                            <h3 class="heading">
-                                                <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
-                                            </h3>
-                                            <div class="border">
-                                                <span></span>
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <p>INTERIORS</p>
-                                            <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/project/project-img/commer-2.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/project/project-img/commer-1.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/project/project-img/commer-2.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/project/project-img/commer-1.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/project/project-img/commer-2.jpg"/></a>
+                                                </div>
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/project/project-img/educ-1.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/project/project-img/educ-2.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/project/project-img/educ-1.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/services/shutterstock_102073156.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/services/shutterstock_102073156.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/services/shutterstock_102073156.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/services/shutterstock_102073156.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class=" col-xs-12 pd-N mT project-wrapper tab-pane" id="commercial">
+                                    <div class="row masonry-container">
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/project/project-img/commer-1.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/project/project-img/commer-2.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/project/project-img/commer-1.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/project/project-img/commer-2.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/project/project-img/commer-1.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/project/project-img/commer-2.jpg"/></a>
+                                                </div>
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class=" col-xs-12 pd-N mT project-wrapper tab-pane" id="construction">
+                                    <div class="row masonry-container">
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/project/project-img/educ-1.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/project/project-img/educ-2.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/project/project-img/educ-1.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 pdLR">
-                                <div class="col-xs-12 pd-N featured-box">
-                                    <div class="col-xs-12 pd-N">
-                                        <a href="#"><img class="img-responsive" alt="image" src="images/services/shutterstock_102073156.jpg"/></a>
-                                    </div>
+                                <div role="tabpanel" class=" col-xs-12 pd-N mT project-wrapper tab-pane" id="government">
+                                    <div class="row masonry-container">
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/services/shutterstock_102073156.jpg"/></a>
+                                                </div>
 
-                                    <div class="hover-text">
-                                        <div class="caption">
-                                            <h3 class="heading">
-                                                <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
-                                            </h3>
-                                            <div class="border">
-                                                <span></span>
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <p>INTERIORS</p>
-                                            <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
                                         </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/services/shutterstock_102073156.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/services/shutterstock_102073156.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pdLR item">
+                                            <div class="col-xs-12 pd-LR featured-box pdT pdB">
+                                                <div class="col-xs-12 pd-N">
+                                                    <a href="#"><img class="img-responsive" alt="image" src="images/services/shutterstock_102073156.jpg"/></a>
+                                                </div>
+
+                                                <div class="hover-text">
+                                                    <div class="caption">
+                                                        <h3 class="heading">
+                                                            <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
+                                                        </h3>
+                                                        <div class="border">
+                                                            <span></span>
+                                                        </div>
+                                                        <p>INTERIORS</p>
+                                                        <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
                                     </div>
                                 </div>
+
+
                             </div>
-                            <div class="col-xs-12 col-sm-3 pdLR">
-                                <div class="col-xs-12 pd-N featured-box">
-                                    <div class="col-xs-12 pd-N">
-                                        <a href="#"><img class="img-responsive" alt="image" src="images/services/shutterstock_102073156.jpg"/></a>
-                                    </div>
-
-                                    <div class="hover-text">
-                                        <div class="caption">
-                                            <h3 class="heading">
-                                                <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
-                                            </h3>
-                                            <div class="border">
-                                                <span></span>
-                                            </div>
-                                            <p>INTERIORS</p>
-                                            <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 pdLR">
-                                <div class="col-xs-12 pd-N featured-box">
-                                    <div class="col-xs-12 pd-N">
-                                        <a href="#"><img class="img-responsive" alt="image" src="images/services/shutterstock_102073156.jpg"/></a>
-                                    </div>
-
-                                    <div class="hover-text">
-                                        <div class="caption">
-                                            <h3 class="heading">
-                                                <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
-                                            </h3>
-                                            <div class="border">
-                                                <span></span>
-                                            </div>
-                                            <p>INTERIORS</p>
-                                            <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-xs-12 pd-N mT project-wrapper">
-                            <div class="col-xs-12 col-sm-3 pdLR">
-                                <div class="col-xs-12 pd-N featured-box">
-                                    <div class="col-xs-12 pd-N">
-                                        <a href="#"><img class="img-responsive" alt="image" src="images/services/shutterstock_102073156.jpg"/></a>
-                                    </div>
-
-                                    <div class="hover-text">
-                                        <div class="caption">
-                                            <h3 class="heading">
-                                                <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
-                                            </h3>
-                                            <div class="border">
-                                                <span></span>
-                                            </div>
-                                            <p>INTERIORS</p>
-                                            <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 pdLR">
-                                <div class="col-xs-12 pd-N featured-box">
-                                    <div class="col-xs-12 pd-N">
-                                        <a href="#"><img class="img-responsive" alt="image" src="images/services/shutterstock_102073156.jpg"/></a>
-                                    </div>
-
-                                    <div class="hover-text">
-                                        <div class="caption">
-                                            <h3 class="heading">
-                                                <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
-                                            </h3>
-                                            <div class="border">
-                                                <span></span>
-                                            </div>
-                                            <p>INTERIORS</p>
-                                            <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 pdLR">
-                                <div class="col-xs-12 pd-N featured-box">
-                                    <div class="col-xs-12 pd-N">
-                                        <a href="#"><img class="img-responsive" alt="image" src="images/services/shutterstock_102073156.jpg"/></a>
-                                    </div>
-
-                                    <div class="hover-text">
-                                        <div class="caption">
-                                            <h3 class="heading">
-                                                <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
-                                            </h3>
-                                            <div class="border">
-                                                <span></span>
-                                            </div>
-                                            <p>INTERIORS</p>
-                                            <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-3 pdLR">
-                                <div class="col-xs-12 pd-N featured-box">
-                                    <div class="col-xs-12 pd-N">
-                                        <a href="#"><img class="img-responsive" alt="image" src="images/services/shutterstock_102073156.jpg"/></a>
-                                    </div>
-
-                                    <div class="hover-text">
-                                        <div class="caption">
-                                            <h3 class="heading">
-                                                <a rel="bookmark" title="Ivy Sites Interior" href="images/services/shutterstock_102073156.jpg">Ivy Sites Interior</a>
-                                            </h3>
-                                            <div class="border">
-                                                <span></span>
-                                            </div>
-                                            <p>INTERIORS</p>
-                                            <a rel="project-gallery" title="Ivy Sites Interior" class="fancybox plus-icon" href="images/services/shutterstock_102073156.jpg"><i class="oic-plus-1"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
 
                     </div>
-                </div>
 
-            </div>
+                </div>
         </section>
         <section class="container-fluid">
             <div class="row">
@@ -496,7 +872,42 @@
         </footer>
         <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/masonry.js"></script>
+        <script type="text/javascript" src="js/imagesLoaded.js"></script>
         <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
         <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript">
+            (function ($) {
+                var $container = $('.masonry-container');
+                $container.imagesLoaded(function () {
+                    $container.masonry({
+                        columnWidth: '.item',
+                        itemSelector: '.item'
+                    });
+                });
+
+                //Reinitialize masonry inside each panel after the relative tab link is clicked - 
+                $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                    e.preventDefault()
+                        $container.imagesLoaded( function () {
+                            $container.masonry({
+                                    itemSelector: '.item',
+                                    columnWidth: '.item'
+                            });
+                        });
+
+                    }); //end shown
+//                $(document).ready(function(){
+//                   $("#project-filter .all-project").click(function(){
+//                       if($(this).hasClass("active")){
+//                              $("html, body").find(".tab-pane").css({"display":"block", "visibility":"visible"});
+//                       }else{
+//                              $("html, body").find(".tab-pane").css({"display":"none", "visibility":"hidden"});
+//                           
+//                       }
+//                   }); 
+//                });
+            })(jQuery);
+        </script>
     </body>
 </html>
